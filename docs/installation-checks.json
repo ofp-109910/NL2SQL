@@ -1,0 +1,206 @@
+{
+  "environment": "CPython 3.10 / Linux x86_64",
+  "paid_model_calls": 0,
+  "checks": [
+    {
+      "check": "fresh requirements.lock installation",
+      "exit_code": 0
+    },
+    {
+      "check": "editable installation",
+      "exit_code": 0
+    },
+    {
+      "check": "dependency consistency",
+      "exit_code": 0
+    },
+    {
+      "check": "README minimal in new environment",
+      "exit_code": 0
+    },
+    {
+      "check": "remove editable installation",
+      "exit_code": 0
+    },
+    {
+      "check": "wheel installation",
+      "exit_code": 0
+    },
+    {
+      "check": "wheel location",
+      "exit_code": 0
+    },
+    {
+      "check": "configuration doctor",
+      "exit_code": 0
+    },
+    {
+      "check": "wheel minimal",
+      "exit_code": 0
+    },
+    {
+      "check": "four complete offline workflows",
+      "exit_code": 0
+    },
+    {
+      "check": "generate evaluation and transfer fixtures",
+      "exit_code": 0
+    },
+    {
+      "check": "rag --retrieve-only -q 销售额怎么计算",
+      "exit_code": 0
+    },
+    {
+      "check": "multi-agent --show-architecture",
+      "exit_code": 0
+    },
+    {
+      "check": "review --controlled-only",
+      "exit_code": 0
+    },
+    {
+      "check": "ai4db --init-only",
+      "exit_code": 0
+    },
+    {
+      "check": "ai4db --analyze-only",
+      "exit_code": 0
+    },
+    {
+      "check": "ai4db --candidate-file <installed-package>/ai4db_demo/workloads/merged.sql",
+      "exit_code": 0
+    },
+    {
+      "check": "acceptance --prepare-only",
+      "exit_code": 0
+    },
+    {
+      "check": "minimal help",
+      "exit_code": 0
+    },
+    {
+      "check": "workflow help",
+      "exit_code": 0
+    },
+    {
+      "check": "agent help",
+      "exit_code": 0
+    },
+    {
+      "check": "join-workflow help",
+      "exit_code": 0
+    },
+    {
+      "check": "join-agent help",
+      "exit_code": 0
+    },
+    {
+      "check": "rag help",
+      "exit_code": 0
+    },
+    {
+      "check": "multi-agent help",
+      "exit_code": 0
+    },
+    {
+      "check": "workflow-v2 help",
+      "exit_code": 0
+    },
+    {
+      "check": "evaluate help",
+      "exit_code": 0
+    },
+    {
+      "check": "evaluate-workflow help",
+      "exit_code": 0
+    },
+    {
+      "check": "review help",
+      "exit_code": 0
+    },
+    {
+      "check": "repair help",
+      "exit_code": 0
+    },
+    {
+      "check": "ai4db help",
+      "exit_code": 0
+    },
+    {
+      "check": "serve help",
+      "exit_code": 0
+    },
+    {
+      "check": "acceptance help",
+      "exit_code": 0
+    },
+    {
+      "check": "query help",
+      "exit_code": 0
+    },
+    {
+      "check": "full regression against installed wheel",
+      "exit_code": 0,
+      "tests": 183
+    },
+    {
+      "check": "minimal.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "workflow.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "agent.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "join.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "rag.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "multi_agent.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "evaluate.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "failure_review.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "ai4db.py help",
+      "exit_code": 0
+    },
+    {
+      "check": "serve.py help",
+      "exit_code": 0
+    }
+  ],
+  "wheel": "nl2sql_handbook-0.1.0-py3-none-any.whl",
+  "final_wheel_validation": {
+    "tests": 183,
+    "paid_model_calls": 0,
+    "wheel": "nl2sql_handbook-0.1.0-py3-none-any.whl",
+    "default_http_health": {
+      "status": "ok",
+      "version": "rag_workflow",
+      "model": "deepseek-flash",
+      "databases": [
+        "library",
+        "sales",
+        "school"
+      ],
+      "read_only": true
+    },
+    "invalid_http_request_status": 400,
+    "current_wheel_verified": true
+  }
+}

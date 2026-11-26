@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sales-definition",
+    "kind": "business_note",
+    "tables": ["main.orders"],
+    "text": "内置销售示例：销售额、成交额、成交金额指 SUM(orders.quantity * orders.unit_price)，金额单位为人民币元。没有其他明确要求时，只统计 orders.status = '已完成' 的订单；待付款、已取消不计入。不要把商品现价替代订单成交单价。本说明仅适用于父目录的内置销售示例数据库。"
+  },
+  {
+    "id": "customer-location",
+    "kind": "business_note",
+    "tables": ["main.customers", "main.orders"],
+    "text": "内置销售示例中的客户所在地、客户所在城市对应 customers.city。按客户所在地统计成交额时，通过 orders.customer_id = customers.customer_id 关联。该列表示客户城市，没有证据将它解释为订单收货地址。"
+  },
+  {
+    "id": "product-category",
+    "kind": "business_note",
+    "tables": ["main.products", "main.orders"],
+    "text": "商品大类、商品类别对应 products.category。按商品大类统计成交额时，通过 orders.product_id = products.product_id 关联，使用 orders.quantity * orders.unit_price 计算。"
+  },
+  {
+    "id": "city-sales-example",
+    "kind": "sql_example",
+    "tables": ["main.customers", "main.orders"],
+    "text": "已确认样例。问题：按客户所在城市统计已完成订单销售额，降序排列。DuckDB SQL：SELECT c.city, SUM(o.quantity * o.unit_price) AS sales FROM main.orders AS o JOIN main.customers AS c ON o.customer_id = c.customer_id WHERE o.status = '已完成' GROUP BY c.city ORDER BY sales DESC, c.city。这里只保存查询写法，没有预存结果；新问题的时间范围、维度和状态要求需要重新核实。"
+  }
+]

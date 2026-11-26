@@ -1,0 +1,13 @@
+**
+!requirements.lock
+!pyproject.toml
+!README.md
+!LICENSE
+!src/
+!src/**
+!configs/
+!configs/service.example.json
+!configs/service.docker.json
+src/**/__pycache__/
+src/**/*.pyc
+src/*.egg-info/

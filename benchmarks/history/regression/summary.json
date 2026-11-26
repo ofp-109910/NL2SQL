@@ -1,0 +1,208 @@
+{
+  "complete": true,
+  "settings": {
+    "suite": "regression",
+    "versions": [
+      "workflow",
+      "workflow_v2",
+      "join_workflow",
+      "join_workflow_v2",
+      "rag_workflow",
+      "rag_workflow_v2"
+    ],
+    "repeats": 1,
+    "workers": 2,
+    "model": "deepseek-flash",
+    "provider_options": {
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0,
+      "max_tokens": 2048,
+      "timeout": 60,
+      "max_retries": 1,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "max_model_calls": 24,
+    "max_sql_attempts": 4,
+    "max_selection_attempts_v2": 2,
+    "max_rows": 100,
+    "case_timeout": 120,
+    "threads": 1,
+    "memory": "512MB",
+    "scoring_instances": 2
+  },
+  "fingerprint": "7f2e43715709be5082894a08420b00610eb673eee697ce680fbc70514afbaba8",
+  "versions": {
+    "workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1785.2152670020587,
+      "p95_ms": 3389.2639099940425,
+      "tokens_reported": 33539,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "workflow_v2": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3,
+      "unknown_call_counts": 0,
+      "p50_ms": 3153.874444506073,
+      "p95_ms": 4114.508851998835,
+      "tokens_reported": 84760,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "join_workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 26,
+      "execution_succeeded": 30,
+      "accuracy_completed": 0.8666666666666667,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1778.6510970036034,
+      "p95_ms": 2279.0801439987263,
+      "tokens_reported": 44152,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 9
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 7
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "join_workflow_v2": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3,
+      "unknown_call_counts": 0,
+      "p50_ms": 3207.8541870068875,
+      "p95_ms": 4464.4074789976,
+      "tokens_reported": 85065,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "rag_workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 28,
+      "execution_succeeded": 30,
+      "accuracy_completed": 0.9333333333333333,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1819.5910990034463,
+      "p95_ms": 2574.5847890066216,
+      "tokens_reported": 81114,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 8
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "rag_workflow_v2": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3,
+      "unknown_call_counts": 0,
+      "p50_ms": 3303.716718000942,
+      "p95_ms": 4141.667545001837,
+      "tokens_reported": 141007,
+      "by_domain": {
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      },
+      "unknown_token_counts": 0
+    }
+  }
+}

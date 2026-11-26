@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nl2sql-handbook"
+version = "0.1.0"
+description = "基于 LangChain、DeepSeek 与 DuckDB 的 NL2SQL 实验项目"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "duckdb==1.5.6",
+    "langchain==1.4.4",
+    "langchain-core==1.6.9",
+    "langchain-deepseek==1.1.1",
+    "python-dotenv==1.2.4",
+    "pydantic==2.14.4",
+    "httpx==0.28.1",
+]
+
+[project.scripts]
+nl2sql = "nl2sql_handbook.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"nl2sql_handbook.rag_demo" = ["knowledge/*.json"]
+"nl2sql_handbook.ai4db_demo" = ["workloads/*.sql"]

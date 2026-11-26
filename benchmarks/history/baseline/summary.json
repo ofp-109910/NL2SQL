@@ -1,0 +1,230 @@
+{
+  "complete": true,
+  "dataset_version": "synthetic-v1",
+  "fingerprint": "91c09cd3429d1e660686b531c2944deb5cc65a8af7f058e884edfe7020f4a384",
+  "settings": {
+    "versions": [
+      "workflow",
+      "agent",
+      "join_workflow",
+      "join_agent",
+      "rag_workflow",
+      "rag_agent",
+      "multi_agent"
+    ],
+    "split": "test",
+    "repeats": 1,
+    "workers": 2,
+    "case_timeout": 120,
+    "max_model_calls": 24,
+    "max_sql_attempts": 4,
+    "max_rows": 100,
+    "model": "deepseek-flash",
+    "provider_options": {
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0,
+      "max_tokens": 2048,
+      "timeout": 60,
+      "max_retries": 1,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "knowledge_policy": "same domain definitions for RAG variants; no gold SQL sent",
+    "threads": 1,
+    "memory": "512MB"
+  },
+  "versions": {
+    "workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 29,
+      "execution_succeeded": 30,
+      "accuracy_completed": 0.9666666666666667,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1586.3648240047041,
+      "p95_ms": 2304.8600719921524,
+      "tokens_reported": 33462,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 9
+        }
+      }
+    },
+    "agent": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 4.033333333333333,
+      "unknown_call_counts": 0,
+      "p50_ms": 3751.8342835028307,
+      "p95_ms": 4402.835778993904,
+      "tokens_reported": 149515,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    },
+    "join_workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 26,
+      "execution_succeeded": 30,
+      "accuracy_completed": 0.8666666666666667,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1813.1778385068174,
+      "p95_ms": 2418.9817089936696,
+      "tokens_reported": 44225,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 7
+        },
+        "library": {
+          "completed": 10,
+          "passed": 9
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    },
+    "join_agent": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 4.066666666666666,
+      "unknown_call_counts": 0,
+      "p50_ms": 3726.279375499871,
+      "p95_ms": 5365.451938996557,
+      "tokens_reported": 201495,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    },
+    "rag_workflow": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 29,
+      "execution_succeeded": 30,
+      "accuracy_completed": 0.9666666666666667,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1869.6456354955444,
+      "p95_ms": 2751.491157003329,
+      "tokens_reported": 81117,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 9
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    },
+    "rag_agent": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 4.033333333333333,
+      "unknown_call_counts": 0,
+      "p50_ms": 3663.083559498773,
+      "p95_ms": 4673.465994987055,
+      "tokens_reported": 248091,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    },
+    "multi_agent": {
+      "planned": 30,
+      "completed": 30,
+      "passed": 30,
+      "execution_succeeded": 30,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 13.166666666666666,
+      "unknown_call_counts": 0,
+      "p50_ms": 21235.516716005804,
+      "p95_ms": 25879.619104001904,
+      "tokens_reported": 1284167,
+      "by_domain": {
+        "sales": {
+          "completed": 10,
+          "passed": 10
+        },
+        "library": {
+          "completed": 10,
+          "passed": 10
+        },
+        "school": {
+          "completed": 10,
+          "passed": 10
+        }
+      }
+    }
+  }
+}

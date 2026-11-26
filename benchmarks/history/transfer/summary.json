@@ -1,0 +1,160 @@
+{
+  "complete": true,
+  "settings": {
+    "suite": "transfer",
+    "versions": [
+      "workflow",
+      "workflow_v2",
+      "join_workflow",
+      "join_workflow_v2",
+      "rag_workflow",
+      "rag_workflow_v2"
+    ],
+    "repeats": 1,
+    "workers": 2,
+    "model": "deepseek-flash",
+    "provider_options": {
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0,
+      "max_tokens": 2048,
+      "timeout": 60,
+      "max_retries": 1,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "max_model_calls": 24,
+    "max_sql_attempts": 4,
+    "max_selection_attempts_v2": 2,
+    "max_rows": 100,
+    "case_timeout": 120,
+    "threads": 1,
+    "memory": "512MB",
+    "scoring_instances": 2
+  },
+  "fingerprint": "515dffe45b2285c2f432ec894740884eced43bf0e8a176b5561cebe4f1066ffc",
+  "versions": {
+    "workflow": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 5,
+      "execution_succeeded": 6,
+      "accuracy_completed": 0.8333333333333334,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1933.9948260021629,
+      "p95_ms": 2682.6189679995878,
+      "tokens_reported": 6606,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 5
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "workflow_v2": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 6,
+      "execution_succeeded": 6,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3.3333333333333335,
+      "unknown_call_counts": 0,
+      "p50_ms": 3497.333153987711,
+      "p95_ms": 5780.744417003007,
+      "tokens_reported": 19574,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 6
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "join_workflow": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 5,
+      "execution_succeeded": 6,
+      "accuracy_completed": 0.8333333333333334,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1961.5509969953564,
+      "p95_ms": 2298.6729270051,
+      "tokens_reported": 8861,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 5
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "join_workflow_v2": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 6,
+      "execution_succeeded": 6,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3.3333333333333335,
+      "unknown_call_counts": 0,
+      "p50_ms": 3007.7686340082437,
+      "p95_ms": 5324.421162993531,
+      "tokens_reported": 19806,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 6
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "rag_workflow": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 6,
+      "execution_succeeded": 6,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 2,
+      "unknown_call_counts": 0,
+      "p50_ms": 1913.2807190035237,
+      "p95_ms": 2167.1715779957594,
+      "tokens_reported": 12675,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 6
+        }
+      },
+      "unknown_token_counts": 0
+    },
+    "rag_workflow_v2": {
+      "planned": 6,
+      "completed": 6,
+      "passed": 6,
+      "execution_succeeded": 6,
+      "accuracy_completed": 1.0,
+      "complete": true,
+      "mean_calls_measured": 3.6666666666666665,
+      "unknown_call_counts": 0,
+      "p50_ms": 3386.220233005588,
+      "p95_ms": 8081.514598001377,
+      "tokens_reported": 29082,
+      "by_domain": {
+        "warehouse": {
+          "completed": 6,
+          "passed": 6
+        }
+      },
+      "unknown_token_counts": 0
+    }
+  }
+}
